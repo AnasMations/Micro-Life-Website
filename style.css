@@ -1,3 +1,5 @@
+/*********** Base Style ***********/
+
 * {
     font-family: sans-serif;
     color: #2B2A2A;
@@ -8,10 +10,7 @@ body {
     margin: auto;
 }
 
-h1 {
-    color: #2B2A2A;
-    margin-left: 20px;
-}
+/*********** Footer ***********/
 
 .footer {
     display: flex;
@@ -50,6 +49,31 @@ h1 {
     width: 100%
 }
 
+.footer h2{
+    font-size: 4vw;
+}
+
+.footer h3{
+    font-size: 3vw;
+}
+
+/* Mobile */
+@media screen and (max-width: 620px) {
+    .footer ul {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+/*********** Header Menu ***********/
+
+.menu h1 {
+    color: #2B2A2A;
+    margin-left: 20px; 
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -78,9 +102,24 @@ h1 {
     background-color: #F1E0A0;
 }
 
+/* Mobile */
+@media screen and (max-width: 620px) {
+    .menu ul {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+/*********** Main Hook Image ***********/
+
 .main_image {
     width: 100%
 }
+
+
+/*********** Personal Brief ***********/
 
 .personal_brief {
     display: flex;
@@ -99,6 +138,24 @@ h1 {
     padding: 0% 5% 0% 5%
 }
 
+.personal_brief h2 {
+    font-size: 4vw;
+    margin-bottom: 2%;
+}
+
+.personal_brief h3 {
+    font-size: 3vw;
+    margin-bottom: 2%;
+}
+
+.personal_brief p {
+    font-size: 2vw;
+    margin-top: 0%;
+    text-align: justify;
+}
+
+/*********** Brief static Gallery ***********/
+
 .gallery-slideshow {
     display: flex;
     justify-content: space-around;
@@ -110,51 +167,36 @@ h1 {
     height: 30%;
 }
 
-
-
-
-
-
-.horizontal-scrolling-items {
-    height: 200px;
-    column-gap: 10px;
-    display: flex;
+/*********** Gallery slideshow ***********/
+.horizontal-scrolling-wrapper {
+    background-color: #000;
 }
 
-.horizontal-scrolling-items__item {
-  height: 100%;
-  width: 200%;
-  background-size: cover;
+.horizontal-scrolling-items {
+    display: flex;
+    height: auto;
+    column-gap: 3%;
+}
+
+.item {
+    max-height: auto;
+    max-width: auto;
+    background-size: cover;
 }
 
 @keyframes infiniteScroll {
-  from {transform: translateX(0) }
+  from {transform: translateX(0%) }
   to {transform: translateX(calc(0px - 50% - 25px));}
 }
 
 .horizontal-scrolling-items {
   animation-name: infiniteScroll;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-.item1 {
-  background-image: url("Images/ant_heads/ant1.jpg");
-}
-
-.item2 {
-  background-image: url("Images/ant_heads/ant2.jpg");
-}
-
-.item3 {
-  background-image: url("Images/ant_heads/ant3.jpg");
-}
-
-.item4 {
-  background-image: url("Images/ant_heads/ant4.jpg");
-}
-
-.item5 {
-  background-image: url("Images/ant_heads/ant5.jpg");
+.horizontal-scrolling-items img {
+    max-width: 100%;
+    max-height: 100%;
 }
