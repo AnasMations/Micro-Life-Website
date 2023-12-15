@@ -8,6 +8,30 @@
 body {
     background-color: #F2F2F2;
     margin: auto;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.CENTER {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*********** Footer ***********/
@@ -17,7 +41,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #706F6F;
-    padding: 0% 5% 0% 5%; /*U R D L*/
+    padding: 5%
 }
 
 .footer .contact{
@@ -27,8 +51,9 @@ body {
 
 .footer ul {
     display: flex;
-    width: 50%;
     justify-content: space-between;
+    width: 400px;
+    padding: 0px 20px 0px 20px;
 }
 
 .footer ul li {
@@ -45,18 +70,6 @@ body {
     background-color: #F1E0A0;
 }
 
-.main_image {
-    width: 100%
-}
-
-.footer h2{
-    font-size: 4vw;
-}
-
-.footer h3{
-    font-size: 3vw;
-}
-
 /* Mobile */
 @media screen and (max-width: 620px) {
     .footer ul {
@@ -69,12 +82,8 @@ body {
 
 /*********** Header Menu ***********/
 
-.menu h1 {
-    color: #2B2A2A;
-    margin-left: 20px; 
-}
-
-.menu {
+/* Website header title and navigation menu */
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,29 +91,39 @@ body {
     padding: 0% 5% 0% 5%; /*U R D L*/
 }
 
-.menu ul {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+/* Header title */
+.header-container h1 {
+    color: #2B2A2A;
 }
 
-.menu ul li {
+/* Navigation menu */
+.header-container ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 0px 20px 0px 20px;
+}
+
+/* Removing bullet points */
+.header-container ul li {
     display: inline;
 }
 
-.menu ul li a{
+/* Navigation menu text style */
+.header-container ul li a{
     font-weight: bold;
     text-decoration: none;
 }
 
-.menu ul li a:hover{
+/* Navigation menu text animation on hover */
+.header-container ul li a:hover{
     color: #706F6F;
     background-color: #F1E0A0;
 }
 
 /* Mobile */
 @media screen and (max-width: 620px) {
-    .menu ul {
+    .header-container ul {
         display: flex;
         width: auto;
         justify-content: space-between;
@@ -114,44 +133,51 @@ body {
 
 /*********** Main Hook Image ***********/
 
-.main_image {
+.main-image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-image-container img {
     width: 100%
+}
+
+/* Mobile */
+@media screen and (max-width: 620px) {
+    .main-image-container img{
+        
+    }
 }
 
 
 /*********** Personal Brief ***********/
 
-.personal_brief {
+.personal-brief {
     display: flex;
     align-items: center;
-    padding: 2%;
-    
+    padding: 25px; 
 }
 
-.personal_brief img {
-    width: 25%;
-    height: 25%;
+.personal-brief img {
+    width: 300px;
     box-shadow: 0px 0px 10px;
 }
 
-.personal_brief div {
-    padding: 0% 5% 0% 5%
+.personal-brief-text {
+    padding: 25px;
+    max-width: 620px;
 }
 
-.personal_brief h2 {
-    font-size: 4vw;
-    margin-bottom: 2%;
-}
-
-.personal_brief h3 {
-    font-size: 3vw;
-    margin-bottom: 2%;
-}
-
-.personal_brief p {
-    font-size: 2vw;
-    margin-top: 0%;
+.personal-brief-text p {
     text-align: justify;
+}
+
+/* Mobile */
+@media screen and (max-width: 620px) {
+    .personal-brief {
+        flex-direction: column;
+        text-align: center
+    }
 }
 
 /*********** Brief static Gallery ***********/
@@ -163,8 +189,7 @@ body {
 }
 
 .gallery-slideshow img{
-    width: 30%;
-    height: 30%;
+    width: 300px;
 }
 
 /*********** Gallery slideshow ***********/
