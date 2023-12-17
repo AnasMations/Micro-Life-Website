@@ -2,8 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Hello World</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Micro-Life</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="Styles/gallery.css">
+        <link rel="stylesheet" href="Styles/book.css">
+        <link rel="stylesheet" href="Styles/about.css">
+        <link rel="stylesheet" href="Styles/contact.css">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -13,11 +17,11 @@
             <nav class="header-container">            
                 <h1>Eduard F. Niga</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Book</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Pages/gallery.html">Gallery</a></li>
+                    <li><a href="Pages/book.html">Book</a></li>
+                    <li><a href="Pages/about.html">About</a></li>
+                    <li><a href="Pages/contact.html">Contact</a></li>
                 </ul>   
             </nav>
         </header>
@@ -41,14 +45,23 @@
         
         <!-- Gallery Slideshow -->
         <div class="gallery-slideshow">
-            <img src="Images/ant_heads/ant1.jpg" alt="">
-            <img src="Images/ant_heads/ant2.jpg" alt="">
-            <img src="Images/ant_heads/ant3.jpg" alt="">
-            <img src="Images/ant_heads/ant4.jpg" alt="">
-            <img src="Images/ant_heads/ant5.jpg" alt="">
+            <img src="Images/ant_side/ant_side_1.jpg" alt="" class="top">
+            <img src="Images/ant_side/ant_side_2.jpg" alt="" class="top">
+            <img src="Images/ant_side/ant_side_3.jpg" alt="" class="top">
+            <img src="Images/ant_side/ant_side_4.jpg" alt="" class="top">
+        </div>
+
+        <!-- Gallery Slideshow -->
+        <div class="gallery-slideshow">
+            <img src="Images/ant_heads/ant1.jpg" alt="" class="bottom">
+            <img src="Images/ant_heads/ant2.jpg" alt="" class="bottom">
+            <img src="Images/ant_heads/ant3.jpg" alt="" class="bottom">
+            <img src="Images/ant_heads/ant4.jpg" alt="" class="bottom">
+            <img src="Images/ant_heads/ant5.jpg" alt="" class="bottom">
         </div>
         
-        <div class="horizontal-scrolling-wrapper">
+        <!-- Failed attempt at animating the gallery slideshow sideways -->
+        <!-- <div class="horizontal-scrolling-wrapper">
             <div class="horizontal-scrolling-items">
                 <div class="item">
                     <img src="Images/ant_heads/ant1.jpg" alt="">
@@ -81,7 +94,7 @@
                     <img src="Images/ant_heads/ant5.jpg" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
         
         
         <!-- Footer -->
@@ -93,11 +106,11 @@
                 </div>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Book</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Pages/gallery.html">Gallery</a></li>
+                    <li><a href="Pages/book.html">Book</a></li>
+                    <li><a href="Pages/about.html">About</a></li>
+                    <li><a href="Pages/contact.html">Contact</a></li>
                 </ul>   
             </nav>
         </footer>

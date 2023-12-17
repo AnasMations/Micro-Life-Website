@@ -1,0 +1,16 @@
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.book-container .book-description {
+    text-align: center;
+}
+
+.book-container img {
+    width: 100%;
+}
+
