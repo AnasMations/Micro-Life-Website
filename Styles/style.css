@@ -53,6 +53,10 @@ button:hover {
     align-items: center;
 }
 
+.PAGE-TITLE {
+    text-align: center;
+}
+
 /*********** Header Menu ***********/
 
 /* Website header title and navigation menu */
