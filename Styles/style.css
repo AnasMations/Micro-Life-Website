@@ -16,6 +16,7 @@ body {
 
 h1 {
     font-size: 28px;
+    cursor: pointer;
 }
 
 h2 {
@@ -32,7 +33,6 @@ p {
 
 a {
     text-decoration: none;
-    font-size: 18px;
 }
 
 button {
@@ -49,7 +49,6 @@ button:hover {
     background-color: #F1E0A0;
     width: 220px;
 }
-
 
 .CENTER {
     display: flex;
@@ -97,25 +96,68 @@ button:hover {
 .header-container ul li a {
     font-weight: bold;
     text-decoration: none;
+    position: relative; /* Positioning for ::after */
+    font-size: 18px;
 }
 
-/* Navigation menu text animation on hover */
-.header-container ul li a:hover {
+/* Add line beneath text with centered animation */
+.header-container ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 2px; 
+    background-color: #000000; 
+    transition: width 0.3s ease;
+}
+
+.header-container ul li a:hover::after {
+    width: 100%;
+}
+
+.selected {
     color: #706F6F;
-    background-color: #F1E0A0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-bar {
+    display: none;
 }
 
 /* Mobile */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 760px) {
     .header-container ul {
-        display: flex;
+        display: none;
         width: auto;
         justify-content: space-between;
         flex-direction: column;
     }
+
+    .menu-bar {
+        display: block;
+        width: 32px;
+        cursor: pointer;
+    }
 }
 
 /*********** Main Hook Image ***********/
+
+@keyframes breath {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
 
 .main-image-container {
     width: 100%;
@@ -123,7 +165,9 @@ button:hover {
 }
 
 .main-image-container img {
-    width: 100%
+    width: 100%;
+    animation: breath 15s ease; 
+    transform-origin: center; 
 }
 
 
@@ -255,11 +299,25 @@ button:hover {
 .footer ul li a {
     font-weight: bold;
     text-decoration: none;
+    position: relative; /* Positioning for ::after */
+    font-size: 18px;
 }
 
-.footer ul li a:hover {
-    color: #706F6F;
-    background-color: #F1E0A0;
+.footer ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 2px; 
+    background-color: #000000; 
+    transition: width 0.3s ease;
+}
+
+.footer ul li a:hover::after {
+    width: 100%;
 }
 
 /* Mobile */

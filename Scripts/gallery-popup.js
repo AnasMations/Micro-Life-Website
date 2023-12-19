@@ -1,6 +1,7 @@
 // Reference: https://www.w3schools.com/howto/howto_css_modal_images.asp
 
 window.onload = function () {
+
     // Get the modal
     var modal = document.getElementById("myModal");
 
