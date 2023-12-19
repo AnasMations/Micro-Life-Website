@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0% 8%;
 }
 
 .gallery img {
     width: 100%;
-    box-shadow: 0px 0px 10px;
 }
 
 .gallery-column {
@@ -14,4 +14,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.img-container {
+    margin: 2%;
+    transition: all 250ms ease-out;
+}
+
+.img-container:hover {
+    margin: 0;
+    cursor: pointer;
+    opacity: 0.8;
 }

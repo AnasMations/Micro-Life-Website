@@ -1,70 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Micro-Life</title>
-        <link rel="stylesheet" href="../Styles/style.css">
-        <link rel="stylesheet" href="../Styles/gallery.css">
-        <link rel="stylesheet" href="../Styles/book.css">
-        <link rel="stylesheet" href="../Styles/about.css">
-        <link rel="stylesheet" href="../Styles/contact.css">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <nav class="header-container">            
-                <h1>Eduard F. Niga</h1>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="book.html">Book</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>   
-            </nav>
-        </header>
-        
-        <!-- Main -->
-        <div class="CENTER">
-            <h2 class="PAGE-TITLE">Gallery</h2>
-            <!-- Two columns -->
-            <div class="gallery">
-                <!-- Left column -->
-                <div class="gallery-column">
-                    <img src="../Images/ant_side/ant_side_1.jpg" alt="">
-                    <img src="../Images/ant_side/ant_side_2.jpg" alt="">
-                    <img src="../Images/ant_heads/ant1.jpg" alt="">
-                    <img src="../Images/ant_side/ant_side_3.jpg" alt="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Micro-Life</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/gallery.css">
+    <link rel="stylesheet" href="../Styles/book.css">
+    <link rel="stylesheet" href="../Styles/about.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding the gallery popup style and script -->
+    <!-- Reference: https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+    <link rel="stylesheet" href="../Styles/gallery-popup.css">
+    <script src="../Scripts/gallery-popup.js"></script>
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption">Eduard F. Niga</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="header-container">
+            <h1>Eduard F. Niga</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div class="CENTER">
+        <h2 class="PAGE-TITLE">Gallery</h2>
+        <!-- Two columns -->
+        <div class="gallery">
+            <!-- Left column -->
+            <div class="gallery-column">
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant1.jpg" alt="Insect by Eduard F. Niga">
                 </div>
-                <!-- Right column -->
-                <div class="gallery-column">
-                    <img src="../Images/ant_side/ant_side_1.jpg" alt="">
-                    <img src="../Images/ant_side/ant_side_2.jpg" alt="">
-                    <img src="../Images/ant_heads/ant1.jpg" alt="">
-                    <img src="../Images/ant_side/ant_side_3.jpg" alt="">
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant2.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant3.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_side/ant_side_4.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant4.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant5.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant6.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                
+            </div>
+            <!-- Right column -->
+            <div class="gallery-column">
+                <div class="img-container">
+                    <img src="../Images/ant_side/ant_side_2.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant7.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_side/ant_side_3.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant8.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant9.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant10.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_side/ant_side_1.jpg" alt="Insect by Eduard F. Niga">
+                </div>
+                <div class="img-container">
+                    <img src="../Images/ant_heads/ant11.jpg" alt="Insect by Eduard F. Niga">
                 </div>
             </div>
         </div>
-        
-        <!-- Footer -->
-        <footer>
-            <nav class="footer">
-                <div class="contact">
-                    <h2>+447533683078</h2>
-                    <h3>edduard@eddimage.com</h3>
-                </div>
+    </div>
 
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="book.html">Book</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>   
-            </nav>
-        </footer>
-        
-    </body>
+    <!-- Footer -->
+    <footer>
+        <nav class="footer">
+            <div class="contact">
+                <h2>+447533683078</h2>
+                <h3>edduard@eddimage.com</h3>
+            </div>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
